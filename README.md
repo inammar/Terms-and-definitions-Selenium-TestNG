@@ -11,4 +11,6 @@ Locators are one of the essential components of Selenium infrastructure, which h
 
 To use these locators, Selenium provides the By class, which locates elements within the DOM. The Document Object Model (DOM) is a programming interface for XML and HTML documents. It states the logical structure of the document and the way it is accessed and manipulated.
 
-It offers several different methods like className, cssSelector, id, linkText, name, partialLinkText, tagName, and XPath, etc., which can identify the web elements based on their corresponding locator strategies. (I will keep adding information...).
+It offers several different methods like className, cssSelector, id, linkText, name, partialLinkText, tagName, and XPath, etc., which can identify the web elements based on their corresponding locator strategies. 
+
+(I will keep adding information...).
