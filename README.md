@@ -16,6 +16,20 @@ Locators are one of the essential components of Selenium infrastructure, which h
 To use these locators, Selenium provides the By class, which locates elements within the DOM (The Document Object Model (DOM) is a programming interface for XML and HTML documents. It states the logical structure of the document and the way it is accessed and manipulated).
 There are different locators like className, cssSelector, id, linkText, name, partialLinkText, tagName, and XPath, etc., which can identify the unique or specific element based on various attributes. 
 
+### 3. How to start
 
+public class Main {
+
+    public static void main(String[] args) {
+    
+        WebDriver driver = new ChromeDriver();
+        
+        driver.manage().window().maximize();
+        
+        driver.get("https://www.example.com");
+        
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        
+        driver.findElement(By.id("CookieOptinAllowAll")).click();
 
 (I will keep adding information...).
