@@ -18,18 +18,18 @@ There are different locators like className, cssSelector, id, linkText, name, pa
 
 ### 3. How to start
 
-public class Main {
+public class Main { // Declares a class named 'Main'
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { // Main method where program execution starts
     
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver(); // Creates a new instance of the ChromeDriver, a WebDriver implementation for Chrome
         
-        driver.manage().window().maximize();
+        driver.manage().window().maximize(); // Maximizes the browser window
         
-        driver.get("https://www.example.com");
+        driver.get("https://www.example.com"); // Navigates to the specified URL ("https://www.example.com")
         
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)); // Sets an implicit wait of 5 seconds, allowing WebDriver to wait for elements to appear before throwing an exception (error)
         
-        driver.findElement(By.id("CookieOptinAllowAll")).click();
+        driver.findElement(By.id("CookieOptinAllowAll")).click(); // Locates an element with the ID "CookieOptinAllowAll" and simulates a click action on it
 
 (I will keep adding information...).
