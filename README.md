@@ -32,4 +32,20 @@ public class Main { // Declares a class named 'Main'
         
         driver.findElement(By.id("CookieOptinAllowAll")).click(); // Locates an element with the ID "CookieOptinAllowAll" and simulates a click action on it
 
+### 4. Common methods
+
+manage() - interacts with the browser's settings and capabilities. It provides access to manage things like window size, cookies, timeouts, and other browser-level operations.
+
+findElement() - finds the first element using the given selector.
+
+findElements() - finds all elements within the current page using the given locator.
+
+getTitle() - gets the title of the current page.
+
+close() - closes the current window and if it is the last window, closes the browser.
+
+quit() - terminates the driver closing all associated window.
+
+
+
 (I will keep adding information...).
