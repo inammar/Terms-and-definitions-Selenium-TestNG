@@ -34,6 +34,8 @@ public class Main { // Declares a class named 'Main'
 
 ### 4. Common methods
 
+#### 4.1. Browser Control
+
 manage() - interacts with the browser's settings and capabilities. It provides access to manage things like window size, cookies, timeouts, and other browser-level operations.
 
 findElement() - finds the first element using the given selector.
@@ -46,6 +48,15 @@ close() - closes the current window and if it is the last window, closes the bro
 
 quit() - terminates the driver closing all associated window.
 
+#### 4.2. Basic interactions that can be done on a web element
+
+sendKeys(string) - enter the string or characters that is specified in the element.
+
+click() - clicks on the element.
+
+getText() - retrieves the text present in the element.
+
+clear() - clears the text present in the element.
 
 
 (I will keep adding information...).
