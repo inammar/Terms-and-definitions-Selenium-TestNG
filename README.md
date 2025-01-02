@@ -50,13 +50,30 @@ quit() - terminates the driver closing all associated window.
 
 #### 4.2. Basic interactions that can be done on a web element
 
-sendKeys(string) - enter the string or characters that is specified in the element.
+sendKeys(string) - enters the string or characters that is specified in the element.
 
 click() - clicks on the element.
 
 getText() - retrieves the text present in the element.
 
 clear() - clears the text present in the element.
+
+#### 4.3. Waits
+
+Implicit Wait is a global wait, applied to all elements in a script, causing Selenium WebDriver to wait for a certain amount of time before throwing a NoSuchElementException.
+
+           Example: driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
+Explicit Wait is a conditional wait, applied to specific elements, making the WebDriver wait until a certain condition is met.
+
+           Example: 
+
+           WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5)); 
+
+           wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("example Id")));
+
+Difference: Implicit Wait is set once and applies throughout the script, whereas Explicit Wait is specified for individual elements.
+
 
 
 (I will keep adding information...).
