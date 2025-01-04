@@ -16,7 +16,13 @@ Locators are one of the essential components of Selenium infrastructure, which h
 To use these locators, Selenium provides the By class, which locates elements within the DOM (The Document Object Model (DOM) is a programming interface for XML and HTML documents. It states the logical structure of the document and the way it is accessed and manipulated).
 There are different locators like className, cssSelector, id, linkText, name, partialLinkText, tagName, and XPath, etc., which can identify the unique or specific element based on various attributes. 
 
-### 3. How to start
+### 3. POM file
+
+In Java, there are dependency management and build solution tools. Maven and Gradle are the most common for Selenium. 
+
+The Maven solution introduces a project object model file - POM file which is an XML structure file. Every time a change is made to the project code, it updates the build status and continuously maintains and monitors the framework components (various parts and libraries that your project depends on) and build (compilation of tests, dependancy management). It ensures everything is set up correctly for you to run your tests smoothly. Maven "continuously maintains and monitors" this setup to make sure your project builds successfully every time changes are made.
+
+### 4. How to start
 
 public class Main { // Declares a class named 'Main'
 
@@ -32,33 +38,33 @@ public class Main { // Declares a class named 'Main'
         
         driver.findElement(By.id("CookieOptinAllowAll")).click(); // Locates an element with the ID "CookieOptinAllowAll" and simulates a click action on it
 
-### 4. Common methods
+### 5. Common methods
 
-#### 4.1. Browser Control
+#### 5.1. Browser Control
 
-manage() - interacts with the browser's settings and capabilities. It provides access to manage things like window size, cookies, timeouts, and other browser-level operations.
+       manage() - interacts with the browser's settings and capabilities. It provides access to manage things like window size, cookies, timeouts, and other browser-level operations.
 
-findElement() - finds the first element using the given selector.
+       findElement() - finds the first element using the given selector.
 
-findElements() - finds all elements within the current page using the given locator.
+       findElements() - finds all elements within the current page using the given locator.
 
-getTitle() - gets the title of the current page.
+       getTitle() - gets the title of the current page.
 
-close() - closes the current window and if it is the last window, closes the browser.
+       close() - closes the current window and if it is the last window, closes the browser.
 
-quit() - terminates the driver closing all associated window.
+       quit() - terminates the driver closing all associated window.
 
-#### 4.2. Basic interactions that can be done on a web element
+#### 5.2. Basic interactions that can be done on a web element
 
-sendKeys(string) - enters the string or characters that is specified in the element.
+       sendKeys(string) - enters the string or characters that is specified in the element.
 
-click() - clicks on the element.
+       click() - clicks on the element.
 
-getText() - retrieves the text present in the element.
+       getText() - retrieves the text present in the element.
 
-clear() - clears the text present in the element.
+       clear() - clears the text present in the element.
 
-#### 4.3. Waits
+#### 5.3. Waits
 
 Implicit Wait is a global wait, applied to all elements in a script, causing Selenium WebDriver to wait for a certain amount of time before throwing a NoSuchElementException.
 
