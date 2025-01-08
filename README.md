@@ -80,6 +80,8 @@ Explicit Wait is a conditional wait, applied to specific elements, making the We
 
 Difference: Implicit Wait is set once and applies throughout the script, whereas Explicit Wait is specified for individual elements.
 
+### 6. TestNG definition
 
+TestNG is a testing framework for the Java programming language. The design goal of TestNG is to cover a wider range of test categories: unit, functional, end-to-end, integration, etc., with powerful and easy-to-use functionalities.
 
 (I will keep adding information...).
