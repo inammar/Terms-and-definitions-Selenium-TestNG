@@ -84,4 +84,26 @@ Difference: Implicit Wait is set once and applies throughout the script, whereas
 
 TestNG is a testing framework for the Java programming language. The design goal of TestNG is to cover a wider range of test categories: unit, functional, end-to-end, integration, etc., with powerful and easy-to-use functionalities.
 
+A TestNG xml file is a configuration file used in the TestNG framework to organize and run your test cases. It allows you to define:
+
+          - test suites, 
+
+          - test classes,
+
+          - test methods, 
+
+and making it easier to manage and execute your tests.
+
+When you install TestNG in your project, the TestNG configuration XML file does not automatically appear. You need to create the TestNG XML file manually. It allows you to customize and organize your tests according to your specific requirements. You can name it whatever you like, typically something like testng.xml, and place it in your project directory. Then, you can configure it as needed using the < suite >, < test >, and < class > tags.
+
+       •	Suite: Represents a collection of tests and is defined by the <suite> tag.
+
+       •	Test: Represents a group of test classes and is defined by the <test> tag.
+
+       •	Class: Represents a Java class containing test methods and is defined by the <class> tag.
+
+       •	Test Method: Represents individual test methods annotated with @Test in your Java class.
+
+
+
 (I will keep adding information...).
