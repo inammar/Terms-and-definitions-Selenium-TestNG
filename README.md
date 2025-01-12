@@ -94,6 +94,8 @@ A TestNG xml file is a configuration file used in the TestNG framework to organi
 
 and making it easier to manage and execute your tests.
 
+### 7. TestNG installation
+
 When you install TestNG in your project, the TestNG configuration XML file does not automatically appear. You need to create the TestNG XML file manually. It allows you to customize and organize your tests according to your specific requirements. You can name it whatever you like, typically something like testng.xml, and place it in your project directory. Then, you can configure it as needed using the < suite >, < test >, and < class > tags.
 
        •	Suite: Represents a collection of tests and is defined by the <suite> tag.
@@ -104,6 +106,31 @@ When you install TestNG in your project, the TestNG configuration XML file does 
 
        •	Test Method: Represents individual test methods annotated with @Test in your Java class.
 
+Example of a simple TestNG XML file:
+
+     <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+        <suite name="MySuite">
+          <test name="MyTest">
+            <classes>
+               <class name="com.example.MyTestClass"/>
+            </classes>
+          </test>
+       </suite>
+          
+This file defines a suite named "MySuite" with a single test named "MyTest," which includes one test class "com.example.MyTestClass."
+
+### 8. TestNG features
+
+TestNG offers a wide range of properties and features that make it a powerful framework. Here are some:
+
+     Parallel Execution: TestNG supports parallel execution of tests by configuring the parallel attribute in the XML file. You can run tests in parallel at the suite, test, class, or 
+     method level.
+
+     Reports: TestNG generates detailed HTML and XML reports by default, which provide insights into the test execution and results.
+
+     Assertions: TestNG provides a rich set of assertions that help validate test results.
+
+     Annotations: TestNG provides a variety of annotations such as @Test, @BeforeClass, @AfterClass, @BeforeMethod, @AfterMethod, etc., to control the test flow.
 
 
 (I will keep adding information...).
