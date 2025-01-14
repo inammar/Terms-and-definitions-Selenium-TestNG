@@ -132,5 +132,18 @@ TestNG offers a wide range of properties and features that make it a powerful fr
 
      Annotations: TestNG provides a variety of annotations such as @Test, @BeforeClass, @AfterClass, @BeforeMethod, @AfterMethod, etc., to control the test flow.
 
+#### 8.1. Main Annotations
+
+@Test: Marks a method as a test method. This method will run as a test case.
+
+@BeforeClass: Runs once before any test methods in the class. Used for one-time setup, like initializing resources.
+
+@AfterClass: Runs once after all test methods in the class. Used for one-time cleanup, like releasing resources.
+
+@BeforeMethod: Runs before each test method. Used for setting up preconditions for tests.
+
+@AfterMethod: Runs after each test method. Used for cleanup after tests.
+
+
 
 (I will keep adding information...).
