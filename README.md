@@ -80,6 +80,20 @@ Explicit Wait is a conditional wait, applied to specific elements, making the We
 
 Difference: Implicit Wait is set once and applies throughout the script, whereas Explicit Wait is specified for individual elements.
 
+#### 5.4. XPath
+
+What is XPath? XPath is a language used to locate elements on a web page.
+
+There are two main types of XPath: Absolute XPath and Relative XPath.
+
+        Absolute XPath: Starts from the root node and follows a specific path to the element, which we want to identify. It's less flexible because any change in the path will break the XPath.
+        The key characteristic of XPath is that it begins with the single forward slash (/).
+
+        Relative XPath: Starts from any node and allows for more flexible paths. A relative XPath starts with the // symbol. It is mainly used for automation since even if an element is
+        removed or added in the DOM, the relative XPath is not impacted.
+
+An absolute XPath is long and difficult to maintain (html/body/tagname/…). While a relative XPath is short (//*[@attribute='value']).
+
 ### 6. TestNG definition
 
 TestNG is a testing framework for the Java programming language. The design goal of TestNG is to cover a wider range of test categories: unit, functional, end-to-end, integration, etc., with powerful and easy-to-use functionalities.
