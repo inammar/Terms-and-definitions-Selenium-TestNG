@@ -86,13 +86,41 @@ What is XPath? XPath is a language used to locate elements on a web page.
 
 There are two main types of XPath: Absolute XPath and Relative XPath.
 
-        Absolute XPath: Starts from the root node and follows a specific path to the element, which we want to identify. It's less flexible because any change in the path will break the XPath.
+        Absolute XPath: Starts from the root node and follows a specific path to the element, which we want to identify. It's less flexible because any change in the path will break 
+        the XPath.
         The key characteristic of XPath is that it begins with the single forward slash (/).
 
         Relative XPath: Starts from any node and allows for more flexible paths. A relative XPath starts with the // symbol. It is mainly used for automation since even if an element is
         removed or added in the DOM, the relative XPath is not impacted.
 
 An absolute XPath is long and difficult to maintain (html/body/tagname/…). While a relative XPath is short (//*[@attribute='value']).
+
+Example of html: 
+
+
+![image](https://github.com/user-attachments/assets/0c05abb0-4c6a-4523-9d8b-3add17d4b8d4)
+
+Example of XPaths:
+
+•	Absolute XPath to the paragraph:
+
+    /html/body/div[1]/div/p
+    
+•	Relative XPath to the paragraph:
+
+    //div[@id='container']//p
+    
+•	XPath using text for the link:
+
+    //a[contains(text(),'Click here')]
+    
+    WebElement link = driver.findElement(By.xpath("//a[contains(text(),'Click here')]"));
+                          
+•	XPath using attribute for the div with class "content":
+
+    //div[@class='content']
+                        
+    WebElement contentDiv = driver.findElement(By.xpath("//div[@class='content']"));
 
 ### 6. TestNG definition
 
