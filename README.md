@@ -186,6 +186,27 @@ TestNG offers a wide range of properties and features that make it a powerful fr
 
 @AfterMethod: Runs after each test method. Used for cleanup after tests.
 
+### 9. Typical Project Structure of Selenium and TestNG
+
+- Project
+  - src
+    - main
+      - java
+        - my_package_name
+    - test
+      - java
+        - my_package_name
+          - TestClass1.java  <-- Test script here!
+          - TestClass2.java  <-- And here!
+  - resources
+  - lib
+  - logs
+  - screenshots
+  - pom.xml
+  - testng.xml
+
+
+
 
 
 (I will keep adding information...).
