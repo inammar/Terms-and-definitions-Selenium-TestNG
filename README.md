@@ -38,6 +38,8 @@ public class Main { // Declares a class named 'Main'
         
         driver.findElement(By.id("CookieOptinAllowAll")).click(); // Locates an element with the ID "CookieOptinAllowAll" and simulates a click action on it
 
+This simple example is attached to this repository using "Magento" shop website.
+
 ### 5. Common methods
 
 #### 5.1. Browser Control
