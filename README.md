@@ -1,5 +1,7 @@
 # Terms-and-definitions
 
+![image](https://github.com/user-attachments/assets/47d86a3d-0c4e-4b25-8ad2-27a01d3d7173)
+
 I found a lot of definitions and terms about Selenium Webdriver and TestNG on the Internet, but not all of them were understandable to me as a beginner. It took a time to find ones that would be explained simply and clearly. Therefore, I created this repository to have all the definitions in one place so that I could check them if necessary. The definitions are not mine, they were all found on the Internet. 
 
 ________________________________________________________________________________________________________________________________________________________________________________________
