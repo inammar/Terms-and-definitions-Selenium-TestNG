@@ -64,7 +64,10 @@ This simple example is attached to this repository using "Magento" shop website.
 
        click() - clicks on the element.
 
-       getText() - retrieves the text present in the element.
+       getText() - retrieves the text present in the element (visible content, that user can see on the screen).
+
+       getAttribute() - retrieves the text present in the element (for attribute values like placeholder, value, href, src, etc. For example, to access the text in a password field, which is stored in the 
+                        value attribute).
 
        clear() - clears the text present in the element.
 
