@@ -63,7 +63,7 @@ This simple example is attached to this repository using "Magento" shop website.
 
        close() - closes the current window and if it is the last window, closes the browser.
 
-       quit() - terminates the driver closing all associated window.
+       quit() - terminates the driver closing all associated windows.
 
 #### 5.2. Basic interactions that can be done on a web element
 
