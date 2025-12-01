@@ -25,6 +25,12 @@ In Java, there are dependency management and build solution tools. Maven and Gra
 
 The Maven solution introduces a project object model file - POM file which is an XML structure file. Every time a change is made to the project code, it updates the build status and continuously maintains and monitors the framework components (various parts and libraries that your project depends on) and build (compilation of tests, dependancy management). It ensures everything is set up correctly for you to run your tests smoothly. Maven "continuously maintains and monitors" this setup to make sure your project builds successfully every time changes are made.
 
+POM is a design pattern in Selenium testing. It means you create a separate class (object) for each web page. That class stores all the locators (buttons, fields, links) and methods (actions) for that page. This makes tests cleaner, reusable, and easier to maintain.
+
+Instead of writing all locators and actions directly in your test, you put them in a separate class that represents a web page.
+
+POM = put all page details (locators + actions) in one class, then call that class in your tests.
+
 ### 4. How to start
 
 public class Main { // Declares a class named 'Main'
