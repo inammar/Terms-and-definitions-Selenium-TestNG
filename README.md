@@ -10,7 +10,7 @@ ________________________________________________________________________________
 ### 1. Selenium Webdriver definition
 
 Selenium Webdriver is an open source web automation tool, that allows to automate web browser interactions. It allows testers to automate browser actions such as navigating through web pages, clicking buttons, entering text, and validating expected outcomes.
-WebDriver is a bridge between your code and the browser.
+WebDriver is a bridge between your code and the browser. It acts like a driver that controls the browser (Chrome, Firefox, etc.).
 
 ### 2. Locators
 
