@@ -219,8 +219,32 @@ TestNG offers a wide range of properties and features that make it a powerful fr
   - pom.xml
   - testng.xml
 
+### 10. Main TestNG Assertions
+
+    Assert.assertEquals(actual, expected)
+
+Checks that the actual result is exactly the same as the expected result.
+
+    Assert.assertNotEquals(actual, expected)
+
+Checks that the actual result is different from the expected result.
+
+    Assert.assertTrue(condition)
+
+Passes if the condition is true.
+
+    Assert.assertFalse(condition)
+
+Passes if the condition is false.
+
+    Assert.assertNull(object)
+ 
+Checks that the object is null.
+
+    Assert.assertNotNull(object)
+
+Checks that the object is not null.
 
 
 
 
-(I will keep adding information...).
